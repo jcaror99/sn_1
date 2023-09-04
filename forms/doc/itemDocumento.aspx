@@ -200,6 +200,11 @@ CollapsedImage="../../images/menu/lnk_mas.png" ImageControlID="imb_ext" ExpandDi
                 <Columns>
                     <asp:CommandField SelectImageUrl="~/images/botones/seleccionarGrilla.gif" ShowSelectButton="True"
                         ButtonType="Image"></asp:CommandField>
+                     <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:ImageButton ID="bti_genealogia" runat="server" ImageUrl="~/images/iconos/genealogia.png" CausesValidation="false" CommandName="genealogia" CommandArgument='<%#Eval("id") %>' />
+                        </ItemTemplate>
+                    </asp:TemplateField>
                     <asp:TemplateField HeaderText="<%$ Resources:res_campoGrilla,doc_itemdocumento_esurgente %>">
                         <ItemTemplate>
                             <asp:CheckBox ID="chb_urgente" runat="server" Checked='<%# eval("urgente") %>' Visible='<%# IIF(eval("id_catalogo")=0,false,true) %>'></asp:CheckBox>

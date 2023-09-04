@@ -1,0 +1,140 @@
+Hora: 14:38:10.2978000
+Error: Exception has been thrown by the target of an invocation.
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at samm_logica.Aplicacion.f_str_campoxRegistro(Int32 p_int_id, String p_str_tabla, String p_str_campo, Boolean& p_bln_activo) in I:\GIT\SAMM\sammnew\samm_logica\Aplicacion.vb:line 799
+   at website.samm_controles.controles_busquedaAvanzada.s_establecerValorSeleccionado(Int32 p_int_valorseleccionado) in I:\GIT\SAMM\sammnew\website\controles\general\busquedaAvanzada.ascx.vb:line 973
+   at website.samm_controles.controles_busquedaAvanzada.set_ValorSeleccionado(Int32 ValorSeleccionado) in I:\GIT\SAMM\sammnew\website\controles\general\busquedaAvanzada.ascx.vb:line 93
+   at website.samm_componentes.controles_paginaInicio_apariencia.s_cargarDatos() in I:\GIT\SAMM\sammnew\website\controles\paginaInicio\apariencia.ascx.vb:line 517
+   at website.samm_componentes.controles_paginaInicio_apariencia.Page_Load(Object sender, EventArgs e) in I:\GIT\SAMM\sammnew\website\controles\paginaInicio\apariencia.ascx.vb:line 431
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_sebastian/forms/general/cambiarclave.aspx
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: _ga - Secure:False- Expires: 00:00 - Values: 0() Cookie: _ga_V7RCG7E292 - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+
+Hora: 14:38:18.1464960
+Error: Exception has been thrown by the target of an invocation.
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at samm_logica.Aplicacion.f_str_campoxRegistro(Int32 p_int_id, String p_str_tabla, String p_str_campo, Boolean& p_bln_activo) in I:\GIT\SAMM\sammnew\samm_logica\Aplicacion.vb:line 799
+   at website.samm_controles.controles_busquedaAvanzada.s_establecerValorSeleccionado(Int32 p_int_valorseleccionado) in I:\GIT\SAMM\sammnew\website\controles\general\busquedaAvanzada.ascx.vb:line 973
+   at website.samm_controles.controles_busquedaAvanzada.set_ValorSeleccionado(Int32 ValorSeleccionado) in I:\GIT\SAMM\sammnew\website\controles\general\busquedaAvanzada.ascx.vb:line 93
+   at website.samm_componentes.controles_paginaInicio_apariencia.s_cargarDatos() in I:\GIT\SAMM\sammnew\website\controles\paginaInicio\apariencia.ascx.vb:line 517
+   at website.samm_componentes.controles_paginaInicio_apariencia.Page_Load(Object sender, EventArgs e) in I:\GIT\SAMM\sammnew\website\controles\paginaInicio\apariencia.ascx.vb:line 431
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_sebastian/forms/general/cambiarclave.aspx
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: _ga - Secure:False- Expires: 00:00 - Values: 0() Cookie: _ga_V7RCG7E292 - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+
+Hora: 14:44:04.4258166
+Error: Exception has been thrown by the target of an invocation.
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at samm_logica.Aplicacion.f_str_campoxRegistro(Int32 p_int_id, String p_str_tabla, String p_str_campo, Boolean& p_bln_activo) in I:\GIT\SAMM\sammnew\samm_logica\Aplicacion.vb:line 799
+   at website.samm_controles.controles_busquedaAvanzada.s_establecerValorSeleccionado(Int32 p_int_valorseleccionado) in I:\GIT\SAMM\sammnew\website\controles\general\busquedaAvanzada.ascx.vb:line 973
+   at website.samm_controles.controles_busquedaAvanzada.set_ValorSeleccionado(Int32 ValorSeleccionado) in I:\GIT\SAMM\sammnew\website\controles\general\busquedaAvanzada.ascx.vb:line 93
+   at website.samm_componentes.controles_paginaInicio_apariencia.s_cargarDatos() in I:\GIT\SAMM\sammnew\website\controles\paginaInicio\apariencia.ascx.vb:line 517
+   at website.samm_componentes.controles_paginaInicio_apariencia.Page_Load(Object sender, EventArgs e) in I:\GIT\SAMM\sammnew\website\controles\paginaInicio\apariencia.ascx.vb:line 431
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_sebastian/forms/general/cambiarclave.aspx
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: _ga - Secure:False- Expires: 00:00 - Values: 0() Cookie: _ga_V7RCG7E292 - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+
+Hora: 14:52:52.8089713
+Error: One or more errors occurred.
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at website.samm_componentes.controles_doc_pop_genealogiaItemDocumento.s_cargarGenealogia() in I:\GIT\SAMM\sammnew\website\controles\doc\pop_genealogiaItemDocumento.ascx.vb:line 40
+   at website.samm_componentes.controles_doc_pop_genealogiaItemDocumento.s_establecerParametro(String p_str) in I:\GIT\SAMM\sammnew\website\controles\doc\pop_genealogiaItemDocumento.ascx.vb:line 27
+   at website.samm_controles.controles_general_popup.s_mostrarpopup(Boolean p_bol_carga) in I:\GIT\SAMM\sammnew\website\controles\general\popup.ascx.vb:line 194
+   at website.samm_controles.controles_general_popup.set_a_bol_visible(Boolean a_bol_visible) in I:\GIT\SAMM\sammnew\website\controles\general\popup.ascx.vb:line 31
+   at website.samm_web.forms_doc_itemDocumento.s_propiedadesPopup(String p_str_control, String p_str_titulo, String p_str_parametro, Boolean p_bol_mostrarSamm) in I:\GIT\SAMM\sammnew\website\forms\doc\itemDocumento.aspx.vb:line 2260
+   at website.samm_web.forms_doc_itemDocumento.grd_itemDocumento_RowCommand(Object sender, GridViewCommandEventArgs e) in I:\GIT\SAMM\sammnew\website\forms\doc\itemDocumento.aspx.vb:line 289
+   at System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridView.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.ImageButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.ImageButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.ImageButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_sebastian/forms/doc/itemDocumento.aspx?d=104698
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: _ga - Secure:False- Expires: 00:00 - Values: 0() Cookie: _ga_V7RCG7E292 - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+
+Hora: 14:54:54.9845012
+Error: One or more errors occurred.
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at website.samm_componentes.controles_doc_pop_genealogiaItemDocumento.s_cargarGenealogia() in I:\GIT\SAMM\sammnew\website\controles\doc\pop_genealogiaItemDocumento.ascx.vb:line 40
+   at website.samm_componentes.controles_doc_pop_genealogiaItemDocumento.s_establecerParametro(String p_str) in I:\GIT\SAMM\sammnew\website\controles\doc\pop_genealogiaItemDocumento.ascx.vb:line 27
+   at website.samm_controles.controles_general_popup.s_mostrarpopup(Boolean p_bol_carga) in I:\GIT\SAMM\sammnew\website\controles\general\popup.ascx.vb:line 194
+   at website.samm_controles.controles_general_popup.set_a_bol_visible(Boolean a_bol_visible) in I:\GIT\SAMM\sammnew\website\controles\general\popup.ascx.vb:line 31
+   at website.samm_web.forms_doc_itemDocumento.s_propiedadesPopup(String p_str_control, String p_str_titulo, String p_str_parametro, Boolean p_bol_mostrarSamm) in I:\GIT\SAMM\sammnew\website\forms\doc\itemDocumento.aspx.vb:line 2260
+   at website.samm_web.forms_doc_itemDocumento.grd_itemDocumento_RowCommand(Object sender, GridViewCommandEventArgs e) in I:\GIT\SAMM\sammnew\website\forms\doc\itemDocumento.aspx.vb:line 289
+   at System.Web.UI.WebControls.GridView.OnRowCommand(GridViewCommandEventArgs e)
+   at System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   at System.Web.UI.WebControls.GridView.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.GridViewRow.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.ImageButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.ImageButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.ImageButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_sebastian/forms/doc/itemDocumento.aspx?d=104698
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: _ga - Secure:False- Expires: 00:00 - Values: 0() Cookie: _ga_V7RCG7E292 - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+

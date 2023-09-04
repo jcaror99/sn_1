@@ -22,6 +22,15 @@ TagPrefix="uc4" %>
 <Columns>
 <asp:BoundField HeaderText="<%$ Resources:res_campoGrilla,cat_reemplazo_cat_catalogo_repuesto_1_codigoInventario %>"
 DataField='cat_catalogo_codigoInventario' />
+
+<asp:TemplateField HeaderText="<%$ Resources:res_campoGrilla,cat_catalogo_catalogo_codigo %>"
+FooterStyle-HorizontalAlign='Right' ItemStyle-HorizontalAlign="Right">
+<ItemTemplate>
+<asp:Label ID="lbl_catalogo_codigo" runat="server" CssClass="lbl_grilla" Text='<%# eval("cat_catalogo_catalogo_codigo") %>'></asp:Label></ItemTemplate>
+<FooterTemplate>
+<asp:Label ID="lbl_TOTcatalogo_codigo" runat="server" CssClass="lbl_grilla"></asp:Label></FooterTemplate>
+</asp:TemplateField>
+
 <asp:TemplateField HeaderText="<%$ Resources:res_campoGrilla,doc_itemdocumento_itemdocumento %>">
 <ItemTemplate>
  <asp:Label ID="lbl_id" runat="server" Text='<%# eval("id") %>' Visible="false" > </asp:Label>

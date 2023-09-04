@@ -1,0 +1,38 @@
+Hora: 09:59:47.3247483
+Error: Error no controlado: doc_subtipoDocumento- New   : mostrarValoresEjecutados
+   en website.samm_web.frm_doc_documento_ot.s_mostrarTab(String p_str_nombreControl) en I:\GIT\SAMM\sammnew\website\forms\doc\doc_documento_ot.aspx.vb:línea 517
+   en website.samm_web.frm_doc_documento_ot.s_seleccionarItemGrilla(Object sender, EventArgs e) en I:\GIT\SAMM\sammnew\website\forms\doc\doc_documento_ot.aspx.vb:línea 158
+   en website.samm_controles.Grilla.OnSeleccionar(EventArgs e) en I:\GIT\SAMM\sammnew\website\App_Code\presentacion\Grilla.vb:línea 31
+   en website.samm_controles.controles_grilla.grvLista_SelectedIndexChanging(Object sender, GridViewSelectEventArgs e) en I:\GIT\SAMM\sammnew\website\controles\general\grilla.ascx.vb:línea 196
+   en System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(GridViewSelectEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleSelect(Int32 rowIndex)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.GridView.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_1/forms/doc/doc_documento_ot.aspx
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+
+Hora: 10:00:06.8726311
+Error: Error no controlado: doc_subtipoDocumento- New   : mostrarValoresEjecutados
+   en website.samm_web.frm_doc_documento_cotizacion.s_mostrarTab(String p_str_nombreControl) en I:\GIT\SAMM\sammnew\website\forms\doc\doc_documento_cotizacion.aspx.vb:línea 452
+   en website.samm_web.frm_doc_documento_cotizacion.s_seleccionarItemGrilla(Object sender, EventArgs e) en I:\GIT\SAMM\sammnew\website\forms\doc\doc_documento_cotizacion.aspx.vb:línea 132
+   en website.samm_controles.Grilla.OnSeleccionar(EventArgs e) en I:\GIT\SAMM\sammnew\website\App_Code\presentacion\Grilla.vb:línea 31
+   en website.samm_controles.controles_grilla.grvLista_SelectedIndexChanging(Object sender, GridViewSelectEventArgs e) en I:\GIT\SAMM\sammnew\website\controles\general\grilla.ascx.vb:línea 196
+   en System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(GridViewSelectEventArgs e)
+   en System.Web.UI.WebControls.GridView.HandleSelect(Int32 rowIndex)
+   en System.Web.UI.WebControls.GridView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)
+   en System.Web.UI.WebControls.GridView.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.GridView.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Link: /sn_1/forms/doc/doc_documento_cotizacion.aspx?st=27
+Usuario: 1
+Al enviar mail a soporte Idae: 
+Cookie: samm_anchoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: samm_altoPantalla - Secure:False- Expires: 00:00 - Values: 0() Cookie: ASP.NET_SessionId - Secure:False- Expires: 00:00 - Values: 0() Cookie: .ASPXAUTH - Secure:False- Expires: 00:00 - Values: 0() 
+
