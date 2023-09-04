@@ -1,0 +1,408 @@
+﻿@font-face
+ {
+    font-family: 'BunkenTechSansProBook'; 
+    src: url('../../fonts/BunkenTechSansProBook.f8a48a3d.ttf'); 
+ }
+ 
+@media (min-width: 1020px) 
+{
+ul.menu
+{
+	display:none;
+   list-style:none;
+   padding:5px;
+   background-color:Menu;
+    z-index:105;
+    color:#28679d;
+     width:129px;
+     font-family: BunkenTechSansProBook, Verdana, Arial, Helvetica, Sans-serif;
+}
+
+ul.menu ul /* Para todos los ul debajo del ul.menu */
+{
+   display:none;
+   list-style:none;
+   white-space:nowrap; 
+   z-index:105;
+    width:129px;
+     
+} 
+/* Esto afecta a todos los ul inmediatamente debajo (el > ) de un li que a su vez esté dentro de un ul.menu */
+ul.menu li:hover > ul
+{
+   display:block;
+     width:129px;
+}
+
+ul.menu li
+{
+   position:relative; /* Las coordenadas de los ul inferiores serán relativas al <li> que los contiene */
+   width:120px;
+   padding-left:2px;
+   border-width:1px;
+	padding:5px;
+   border-top-style:solid;
+   border-bottom-style:solid;
+    z-index:105;
+  }
+
+ul.menu ul
+{
+	position:absolute; /* Esta posición es relativa al <li> que contiene a este <ul> */
+	left:129px; /* Para que no monte sobre el <li> */
+	top:-1px;
+	 width:129px;
+	display:none;
+	list-style:none;
+	padding:0px;
+	border-style:solid;
+	cursor:pointer;
+	background-color:white;
+	border-bottom-style:solid;
+	border-width:thin;
+}
+
+
+ul.menu> li > ul /* Solo para los ul debajo de los li de primer nivel. */
+{
+	  width:129px;
+	position:absolute;
+	left:0px;
+	top:21px;
+	display:none;
+	list-style:none;
+	padding:0px;
+	border-style:solid;
+	background-color:white;
+	border-width:thin;
+	padding-bottom:2px;
+	font-weight:normal;
+	left:-1px\9; /* para que en solo IE lo interprete yno salga mal*/
+}
+
+ul.menu > li /* Sólo para li de primer nivel */
+{
+	display:inline;
+     width:129px;
+}
+
+a.menu_link
+{
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	
+	text-decoration:none;
+}
+
+ul.menu li:hover > a
+{
+	  width:129px;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	color:White;
+	text-decoration:none;
+	
+}
+
+ul.menu li > a:hover
+{
+	  width:129px;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	color:White;
+	text-decoration:none;
+	
+}
+ul.menu li > a:visited
+{	
+	  width:129px;
+	color:Black;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+ul.menu li > a:visited:hover
+{	
+	  width:129px;
+	color:White;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+ul.menu li:hover > a:visited
+{	
+	  width:129px;
+	color:White;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+
+
+a.menu_link_sub
+{
+	 width:129px;
+	color:Black;
+	display:block;	
+	padding:0px 0px 0px 0px;
+	background-image:url('../images/iconos/mas.gif');
+	background-repeat:no-repeat;
+	background-position:right;
+
+	text-decoration:none;
+}
+
+.menu_lbl
+{
+	  width:129px;
+	font-size:11px;
+	display:block;	
+	padding:0px 0px 0px 0px;
+}
+.menu_lbl_sub
+{
+	width:129px;
+	padding:0px 0px 0px 0px;
+	display:block;	
+	background-image:url('../../images/iconos/menu_mas.gif');
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+ul.menu li:hover > span
+{
+	  /*width:129px;*/
+	display:block;	
+	padding:0px 0px 0px 0px;
+	color:White;
+}
+
+
+.tdMenu
+{
+    width: 100%; 
+    background-color: white;
+}
+li.submenu
+{
+	font-size:11px;
+}
+}
+
+    .movil{
+        display:block;
+        background: gray;
+    }
+.divlogol{position: fixed;}
+
+header {
+	
+}
+
+header nav {
+	background:#fff;/*#023859;*/
+	z-index:1000;
+	max-width: 1000px;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	/*display:inline-block;*/
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#E6344A;
+}
+
+header nav ul li a {
+	color:#000;
+	/*display:block;*/
+	text-decoration:none;
+	/*padding: 10px;*/
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.movil
+{
+	display:none;
+}
+
+.div_titpag{padding-top:10px;}
+
+@media (max-width: 767px)
+{
+.vacio_cabecera {display:none;}
+.td_inf{display:none;}
+	.tr_movil {
+		display: block;
+		tetical-align: top;
+		background-color: #f2f2f2;
+	}
+	.tr_info {
+		display: none;
+	}
+	.tr_informacion {
+		text-align: -webkit-left;
+		padding-left: 3%;
+		height: 100%;
+		width: 100%;
+	}
+	.td_lblFormulario {
+		width: 30%;
+	}
+	.tr_movilMenu {
+		display: flex;
+		flex-direction: column;
+	}
+	#formulario {
+		padding-left: 19%;
+	}
+	.div_grilla {
+		width: 95vw;
+	}
+.imb_rep, .buscador{display:none;}
+	
+a.menu_link{
+	padding:2px;
+	font-size:11px;
+    width:100%;
+    }
+.menu_lbl_sub{
+    width:100%;
+	font-size:11px;
+	padding:1px;
+	border-bottom: solid 1px #aaaaaa;
+	}
+
+
+li.submenu
+{
+	font-size:11px;
+	padding:2px;
+}
+}
+
+@media (max-width: 1020px) 
+{
+ 
+	header nav ul li:hover .children {
+	/*display:block;*/
+}
+.menu_G{
+    width:100%;
+	font-size:11px;
+}
+header nav ul li .children {
+	display: none;
+	color:#000;
+	position: absolute;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li a:hover{
+    color: White;
+}
+header nav ul li:hover{
+    color: White;
+}
+header nav ul li .children {
+	display: none;
+	background:#fff;
+	color:#000;
+	padding:7px;
+}
+header nav ul li .children a{
+	color:#000;
+}
+header nav ul li .children a:hover{
+	color:#fff;
+}
+ 
+	header nav {
+		width: 70%;
+		height: calc(100% - 60px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+	.nav{
+	    top:50px;
+	}
+	header nav ul li 
+	{
+		font-size: 11px !important;
+		display: block;
+		border-bottom:0.1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:7px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+	.divlogol{
+	margin-left: -140px;
+}
+}
+
+

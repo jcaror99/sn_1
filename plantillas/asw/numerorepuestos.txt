@@ -1,0 +1,5 @@
+﻿--0: fecha desde
+select count(PGPRDC) 
+from SRBPRG ,SRBPRS 
+where SRBPRG.PGPRDC = SRBPRS.PSPRDC 
+and PGCDAT >= '<$0$>'

@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" CodeBehind="mas_materialize.master.vb" Inherits="website.samm_web.mas_materialize" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register src="~/controles/general/error.ascx" tagname="error" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%=MyBase.f_str_titulo()%></title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../css/materialize/materialize.css" type="text/css"media="screen,projection"/>
+    <link rel="stylesheet" href="../../css/materialize/PlantillaCSS.css"/>
+    <link rel="stylesheet" href="../../css/materialize/menu.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> <!--validar archivos locales-->
+    <script type="text/javascript" src="../../js/samm7/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/samm7/modal.js?1102" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/samm7/PlantillaJS.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/samm7/sending.js?1102" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/samm7/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../../js/samm7/soapclient21.js"></script>
+    <!--<script type="text/javascript" src="../../js/samm7/jquery-2.2.4.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>    
+  <script>
+      $(document).ready(function() {
+          Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+          function EndRequestHandler(sender, args) {
+              actualizaEnd();
+          }
+      });
+  </script>
+  <link rel="shortcut icon" href="../../favicon.ico" />
+</head>
+<body>
+    <form id="formularioCreacion" runat="server">
+        <div>
+            <asp:ScriptManager ID="scm_general" runat="server" EnablePageMethods="true"  EnableScriptGlobalization="True"  EnableScriptLocalization="True"  >
+            <Scripts>
+            <asp:ScriptReference Path="../../js/samm7/materialize.min.js" />
+            <asp:ScriptReference Path="../../js/samm7/modal.js" />
+            <asp:ScriptReference Path="../../js/samm7/PlantillaJS.js" />
+            <asp:ScriptReference Path="../../js/samm7/sending.js?2" />
+            <asp:ScriptReference Path="../../js/samm7/jquery-2.1.1.min.js" />
+            <asp:ScriptReference Path="../../js/samm7/soapclient21.js" />
+            </Scripts>
+            </asp:ScriptManager>
+            <asp:ContentPlaceHolder ID="cph_cabecera" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="cph_general" runat="server">
+            </asp:ContentPlaceHolder><uc3:error ID="error1" runat="server" />
+        </div>
+    </form>
+</body>
+<script type="text/javascript" src="../../js/Interfaz/fixff.js"></script>
+<script type="text/javascript">$(document).ready(main());myFunction();</script>
+</html>

@@ -1,0 +1,85 @@
+img{
+  padding: 0.35rem;
+  margin: 0.35rem;
+}
+.tamaño{
+}
+.contenedor-botones{
+  text-align: right;
+  margin-top: 1.35rem;
+}
+.barra-superior{
+  height: 120px;
+  border-bottom: 1px solid #28679d;
+}
+.fixed-action-btn{
+  position: relative;
+  height: 40px;
+  margin: 2.35rem;
+}
+a .btn-floating {
+}
+.modal{
+  position:fixed;
+  top: 25%;
+  left: 10%;
+}
+.modaEjemplo{
+  position: fixed;
+}
+.cardHome{
+  height: auto!important;
+}
+.cabeceraSamm{
+  background-color: #28679d;
+  padding:0px;
+}
+.colorSamm{
+  background-color: #28679d;
+}
+.cuerpoSamm{
+  background-color: #28679d;
+}
+.txtopcion {
+    font-size: 12px !important;
+    padding: 0 0 2px 2px !important;
+    margin-top: 8px !important;
+    height: 1rem !important;
+}
+.txtseccion {
+    margin-top: 8px !important;
+    height: 16px !important;
+    border-bottom: none !important;
+}
+
+.modal{z-index:200;}
+.material-icons.obliga-no { color: rgba(64, 64, 64, 1); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.obliga-si { color: rgba(255, 99, 99, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+div.opcionatributo
+{
+    border-style: groove groove groove groove;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-width: thin;
+}
+    
+.contenedor-div-opcionesAtributo{
+    display:flex;
+    white-space:nowrap;
+}
+.collapsible-body
+{
+    background-color:rgb(230, 242, 255, 0.25);
+    }
+
+@media only screen and (max-width: 1000px) {
+	.contenedor-div-opcionesAtributo 
+	{
+    white-space:nowrap;
+		display: flex;
+  }
+}/**/

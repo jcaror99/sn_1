@@ -1,0 +1,200 @@
+﻿ul.menu
+{
+   list-style:none;
+   padding:5px 3px 4px 10px;
+   background-color:Menu;
+    z-index:105;
+    color:#28679d;
+     width:130px;
+     font-family:verdana;
+     font-size:9pt;
+}
+
+ul.menu ul /* Para todos los ul debajo del ul.menu */
+{
+   display:none;
+   list-style:none;
+   white-space:nowrap; 
+   z-index:105;
+    width:130px;
+     
+} 
+/* Esto afecta a todos los ul inmediatamente debajo (el > ) de un li que a su vez esté dentro de un ul.menu */
+ul.menu li:hover > ul
+{
+   display:block;
+     width:130px;
+}
+
+ul.menu li
+{
+   position:relative; /* Las coordenadas de los ul inferiores serán relativas al <li> que los contiene */
+   width:120px;
+   padding-left:5px;
+   padding-top:2px;
+   border-width:1px;
+	padding:2px;
+   border-top-style:solid;
+    z-index:105;
+  }
+
+ul.menu ul
+{
+	position:absolute; /* Esta posición es relativa al <li> que contiene a este <ul> */
+	left:130px; /* Para que no monte sobre el <li> */
+	top:-1px;
+	 width:130px;
+	display:none;
+	list-style:none;
+	padding:0px;
+	border-style:solid;
+	cursor:pointer;
+	background-color:white;
+	border-bottom-style:solid;
+	border-width:thin;
+}
+
+
+ul.menu> li > ul /* Solo para los ul debajo de los li de primer nivel. */
+{
+	  width:130px;
+	position:absolute;
+	left:0px;
+	top:21px;
+	display:none;
+	list-style:none;
+	padding:0px;
+	border-style:solid;
+	background-color:white;
+	border-width:thin;
+	padding-bottom:2px;
+	font-weight:normal;
+	/* left:-1px\9; para que en solo IE lo interprete yno salga mal*/
+}
+
+ul.menu > li /* Sólo para li de primer nivel */
+{
+	display:inline;
+     width:130px;
+}
+
+a.menu_link
+{
+	  width:130px;
+	color:Black;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+
+ul.menu li:hover > a
+{
+	  width:130px;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	color:White;
+	text-decoration:none;
+	
+}
+
+ul.menu li > a:hover
+{
+	  width:130px;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	color:White;
+	text-decoration:none;
+	
+}
+ul.menu li > a:visited
+{	
+	  width:130px;
+	color:Black;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+ul.menu li > a:visited:hover
+{	
+	  width:130px;
+	color:White;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+ul.menu li:hover > a:visited
+{	
+	  width:130px;
+	color:White;
+	font-style:normal;	
+	display:block;	
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	text-decoration:none;
+}
+
+
+a.menu_link_sub
+{
+	  width:130px;
+	color:Black;
+	display:block;	
+	padding:0px 0px 0px 0px;
+	background-image:url('~/images/botones/menu_mas.gif');
+	background-repeat:no-repeat;
+	background-position:right;
+	font-size:11px;
+	text-decoration:none;
+}
+
+.menu_lbl
+{
+	  width:130px;
+	font-size:11px;
+	display:block;	
+	padding:0px 0px 0px 0px;
+}
+.menu_lbl_sub
+{
+	  width:130px;
+	font-size:11px;
+	padding:0px 0px 0px 0px;
+	display:block;	
+	background-image:url('~/images/botones/menu_mas.gif');
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+ul.menu li:hover > span
+{
+	  width:130px;
+	display:block;	
+	padding:0px 0px 0px 0px;
+	color:White;
+}
+
+td.menu
+{
+    vertical-align:top ;
+    padding: 0;
+    padding-left: 5px; 
+    background-color: white;
+}
+table.menu
+{
+    padding:0;
+    }
+.menu1
+{
+    border-right-style:solid;
+  }

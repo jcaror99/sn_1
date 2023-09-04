@@ -1,0 +1,87 @@
+.tituloBH {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.title2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #336699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.bt {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #99ccff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.usuario {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.comun {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #006699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.comunblanco {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.tituloPaginaazul {
+	FONT-WEIGHT: bolder; FONT-SIZE: 16px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.tituloPaginaazulCopy {
+	FONT-WEIGHT: bolder; FONT-SIZE: 18px; COLOR: #999999; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif
+}
+.comunNARANJA {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc6600; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.tituloPaginaAzul {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.lnk_acceso
+{
+    FONT-WEIGHT: normal; 
+    FONT-SIZE: 10px; 
+    COLOR: #28679d; 
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    white-space:nowrap;
+}
+.lnk_acceso a:hover
+{    FONT-WEIGHT: normal; 
+    FONT-SIZE: 10px; 
+    COLOR: #28679d; 
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.lnk_acceso a:visited
+{    FONT-WEIGHT: normal; 
+    FONT-SIZE: 10px; 
+    COLOR: #28679d; 
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.lnk_acceso a:active
+{    FONT-WEIGHT: normal; 
+    FONT-SIZE: 10px; 
+    COLOR: #28679d; 
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.bloquehome
+{
+	width:100%;
+	display: flex !important;
+	flex-wrap: wrap;
+}
+td .bloqueone
+{
+	background:white;
+	margin: 0px 3px;
+	}
+td .bloquetwo
+{
+	background:white;
+	margin: 0px 3px;
+	}
+td .bloquethree
+{
+	background:white;
+	margin: 0px 3px;
+	
+}
+.tblMarco
+{
+       border:solid 1px #aaa;
+       width:310px;
+       
+}

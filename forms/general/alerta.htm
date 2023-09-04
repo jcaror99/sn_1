@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tablero de Alertas</title>
+	<script>
+	var intEspera=10000;
+	var intTop=100;
+	var intIzq=0;
+	var intAlto=480;
+	var strPage="inicio.aspx";
+function mantener() { 
+		var vFrame=document.getElementById('ventanita');
+		vFrame.src="";
+		vFrame.src=strPage;	
+}
+function tamnioVentana() {
+	alert("Parámetros habilitados:\ne: tiempo de Espera en milisegundos (vr defecto: "+intEspera+")\ns: scroll Superior (vr defecto: "+intTop+")\ni: scroll Izquierdo (vr defecto: "+intIzq+")\np: dirección de Página a cargar (vr defecto: "+strPage+")\na: Alto del marco (vr defecto: "+intAlto+").\n\nEjemplo: alerta.htm?p=..%2fort%2fcalendario.aspx&e=60000&i=100&s=200");	
+	if(getParameterByName('e')!=undefined) intEspera=getParameterByName('e');
+	if(getParameterByName('s')!=undefined) intTop=getParameterByName('s');
+	if(getParameterByName('i')!=undefined) intIzq=getParameterByName('i');
+	if(getParameterByName('p')!=undefined) strPage=getParameterByName('p');
+	if(getParameterByName('a')!=undefined) intAlto=getParameterByName('a');
+	var vFrame=document.getElementById('ventanita');
+	vFrame.style.height=intAlto+"px";
+	vFrame.onload = function () {vFrame.contentWindow.scrollTo(intIzq,intTop);}
+}
+
+function getParameterByName(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+	</script>
+</head>
+<body onload="tamnioVentana();mantener();msgTimer=window.setInterval('mantener()',intEspera);">
+<iframe id="ventanita" name="ventanita" style="width:100%;height:480px;"></iframe>
+</body>
+</html>

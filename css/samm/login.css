@@ -1,0 +1,87 @@
+﻿.login_1 
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 10px; 
+    color: #004566;
+    text-align:center;
+    vertical-align:middle;
+}
+.login_2
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+.unnamed1
+{color: #FFFFFF;background:#889baf;}
+@media (max-width: 650px){
+.unnamed1
+{color: black;}
+.unnamed1,.bot{
+    background:none;
+    }
+
+img, #lblPortada,.port{
+    display:none;
+    }
+    .login_1{
+    color:white;
+    height: 10px;
+    }
+    #pnl_login tr{
+      width: 100%;
+        display: inline-block;
+    }
+    #imgLogin{
+    overflow:hidden;
+    display:block;
+    
+    }
+    
+    .login_2{
+    display: inline-block;
+    width: 100%;
+    }
+
+
+}  
+#btnIngresar
+{
+	background-color: red;
+}
+.txtLogin
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 30px;
+    width:250px;
+    text-decoration:none;
+    border: none;
+    border-radius: 5px;
+    padding-left:5px;
+}
+.txtLogin::placeholder  
+{
+    padding-left:5px;
+}
+.tdLogin
+{
+    background-color:#fff;
+    border-radius:7px; 
+    width:317px;
+    display:flex;
+    margin-left:20px;
+}
+.lblEmpresa
+{
+    color:white;
+    font-size:12px;
+}
+.imgIcono
+{
+    height: 28px; width: 30px;
+    margin-bottom: -7px;
+}

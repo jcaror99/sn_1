@@ -1,0 +1,15 @@
+SELECT 
+    SRBSRO.SRSTHQ-SRBSRO.SRPICQ as Disponible,
+    SRBSRO.SRSTHQ AS Existencia,
+    SRBSRO.SRPICQ AS Reservado,
+    SRBSRO.SRPURQ as EnOCs,
+    SRBSRO.SRPRDC as Referencia,
+    SRBSRO.SRSROM as Bodega,
+    SRBIN1 as Localizacion,
+    (select max(ITDATE) from SROITR where ITPRDC=SRBSRO.SRPRDC and ITSROM=SRBSRO.SRSROM) as UltimoTraslado
+--    ,SRBPRG.PGAPCO as Costo
+FROM SRBSRO
+--	,SRBPRG
+WHERE 
+-- SRBSRO.SRPRDC=SRBPRG.PGPRDC and
+  SRBSRO.SRPRDC='<$0$>'

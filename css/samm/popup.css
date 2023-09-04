@@ -1,0 +1,84 @@
+﻿.modalBackground {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background-color:gray;
+	filter:alpha(opacity=40);
+	opacity:0.4;
+	z-index: 10000; 
+	
+}
+html>body .modalBackground 
+{
+	overflow:visible;
+
+}
+
+
+.modalBackground_bus {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background-color:gray;
+	filter:alpha(opacity=40);
+	opacity:0.4;
+	z-index: 10005; 
+	
+}
+html>body .modalBackground_bus
+{
+	overflow:visible;
+
+}
+
+.tbl_popup
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #006699;
+    position: absolute;
+    border-right: gray 1px solid;
+    border-top: gray 1px solid;
+    border-left: gray 1px solid;
+    border-bottom: gray 1px solid;
+    z-index: 10001;
+    border:none;
+}
+
+html>body .tbl_popup {
+  background-color:White;   
+} 
+.tbl_popup_bus
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #006699;
+    position: absolute;
+	background :rgba(255,255,255,0.7) !important;
+	width :10%;
+    border-right: gray 1px solid;
+    border-top: gray 1px solid;
+    border-left: gray 1px solid;
+    border-bottom: gray 1px solid;
+    z-index: 10011;
+    border:none;
+}
+.lbl_tituloPopup {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: bold;
+	padding-left:8px;
+	text-decoration-style:wavy;
+	cursor:default;
+}
+
+.tr_tituloPopup {
+	text-decoration: none;
+	width: 100%;
+	background-image: url(../../images/popup/titulo.png);
+	background-repeat: repeat-x;
+	white-space: nowrap;
+	background-color: #41659c;
+}
+.tr_tituloPop {
+	background-color: #41659c;
+}
+
+

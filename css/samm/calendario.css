@@ -1,0 +1,207 @@
+body {
+}
+.lbl_diaSeleccionado
+{
+    background-color: #ff00ff;
+    font-weight: bold;
+    color: blue;
+    font-family: Arial;
+}
+.lbl_encabezado
+{
+}
+.lbl_textoCronograma
+{
+    font-size: 9px;
+    font-weight: normal;
+    color: #28679d;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: default;
+}
+.drpMesAnio
+{
+	color:#28679d;
+	font-family:verdana;
+	font-size:10px;
+	background-color:White;
+	}
+.diaCalendario
+{
+	color:white;
+	border: solid 1px white;
+	padding:3px;
+	}	
+.cronograma_0
+{
+    border-color:White;
+    border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+}
+.cronograma_1
+{
+    border-color: #e6e7e8;
+    border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+}
+.cronograma_2
+{
+    border-color:Orange;
+    border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+}	
+.cronograma_3
+{
+    border-color: #d9f700;
+    border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+}	
+.cronograma_4
+{
+    border-color:Yellow;
+	border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+}	
+.cronograma_5
+{
+    border-color:Green;
+	border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+
+}	
+.cronograma_6
+{
+    border-color:Red;
+    border-width:2px;
+    cursor: pointer;
+    padding:5px;
+    width:100%;
+    height:100%;
+}
+.cronoDia_0
+{
+    opacity: 0.7;
+    background-color:White;
+    cursor: pointer;
+}
+.cronoDia_1
+{
+    opacity: 0.7;
+    background-color: #e6e7e8;
+    cursor: pointer;
+}
+.cronoDia_2
+{
+    opacity: 0.7;
+    background-color:Orange;
+    cursor: pointer;
+}	
+.cronoDia_3
+{
+    opacity: 0.7;
+    background-color: #d9f700;
+    cursor: pointer;
+}	
+.cronoDia_4
+{
+    opacity: 0.7;
+    background-color:Yellow;
+    cursor: pointer;
+}	
+.cronoDia_5
+{
+    opacity: 0.7;
+    background-color:Green;
+    cursor: pointer;
+}	
+.cronoDia_6
+{
+    opacity: 0.7;
+    background-color:Red;
+    cursor: pointer;
+}
+.cronoDia_0:hover {opacity: 1;}
+.cronoDia_1:hover {opacity: 1;}
+.cronoDia_2:hover {opacity: 1;}
+.cronoDia_3:hover {opacity: 1;}
+.cronoDia_4:hover {opacity: 1;}
+.cronoDia_5:hover {opacity: 1;}
+.cronoDia_6:hover {opacity: 1;}
+
+.cronoPeque_blanco
+{
+    background-color:White;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+}
+.cronoPeque_gris
+{
+    background-color: #e6e7e8;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+}
+.cronoPeque_naranja
+{
+    background-color:Orange;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+}	
+.cronoPeque_amaVerde
+{
+    background-color: #d9f700;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+}	
+.cronoPeque_amarillo
+{
+    background-color:Yellow;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+}	
+.cronoPeque_verde
+{
+    background-color:Green;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+
+}	
+.cronoPeque_rojo
+{
+    background-color:#FF8888;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+}
+
+.tooltip{
+  position: absolute;
+  display: block;
+  background-color:InfoBackground;
+  border: 1px solid;
+  color:InfoText;
+  text-align:left;
+}

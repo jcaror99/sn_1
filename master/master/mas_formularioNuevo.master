@@ -1,0 +1,33 @@
+﻿<%@ Master Language="VB" CodeBehind="mas_formularioNuevo.master.vb" Inherits="website.samm_web.mas_formularioNuevo" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register src="~/controles/general/error.ascx" tagname="error" tagprefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%=MyBase.f_str_titulo()%></title>
+    <link href="../../css/importar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../js/Documento/Documentos.js"></script>
+    <link href="../../css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" /> 
+    <link rel="shortcut icon" href="../../favicon.ico" />
+</head>
+<body>
+    <form id="formularioCreacion" runat="server">
+        <div>
+            <asp:ScriptManager ID="scm_general" runat="server" EnablePageMethods="true"  EnableScriptGlobalization="True"  EnableScriptLocalization="True"  >
+            </asp:ScriptManager>
+             <uc3:error ID="error1" runat="server" />
+            <asp:HiddenField ID="hdd_popup" runat="server" />
+            <asp:ContentPlaceHolder ID="cph_tituloPagina" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="cph_general" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+<script type="text/javascript" src="../../js/Interfaz/fixff.js"></script>
+<script src="../../js/bootstrap/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">$(document).ready(main());myFunction();</script>
+</html>

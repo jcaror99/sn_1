@@ -1,0 +1,9 @@
+﻿--0: referencia de inventario
+SELECT SRBSRO.SRSTHQ-SRBSRO.SRPICQ as Disponible,
+    SRBSRO.SRSTHQ AS Existencia,
+    SRBSRO.SRPICQ AS Reservado,
+    SRBSRO.SRPURQ as EnOCs,
+    SRBSRO.SRPRDC as Referencia,
+    SRBSRO.SRSROM as Bodega
+FROM SRBSRO
+WHERE SRBSRO.SRPRDC='<$0$>'

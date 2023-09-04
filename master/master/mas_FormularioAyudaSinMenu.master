@@ -1,0 +1,130 @@
+﻿<%@ Master Language="VB" CodeBehind="mas_FormularioAyudaSinMenu.master.vb" Inherits="website.samm_web.master_master_mas_FormularioAyudaSinMenu" %>
+<%@ Register Src="~/controles/general/menuFinal.ascx" TagName="menuFinal" TagPrefix="uc1" %>
+<%@ Register Src="~/controles/general/bocadillo.ascx" TagName="bocadillo" TagPrefix="uc5" %>
+<%@ Register Src="~/controles/general/cargando.ascx" TagName="cargando" TagPrefix="uc4" %>
+<%@ Register Src="~/controles/general/cabecera.ascx" TagName="cabecera" TagPrefix="uc2" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register src="~/controles/general/error.ascx" tagname="error" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%=MyBase.f_str_titulo()%></title>
+    <link href="../../css/calendario.css" type="text/css" rel="Stylesheet" />
+    <script type="text/javascript" src="../../js/Interfaz/Recordatorios.js"></script>
+    <script type="text/javascript" src="../../js/Documento/Documentos.js"></script>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        
+            
+            <asp:ScriptManager ID="scm_general" runat="server" EnableScriptGlobalization="True" EnableScriptLocalization="True"  EnablePageMethods="True">
+            </asp:ScriptManager>
+            
+            <uc3:error ID="error1" runat="server" />
+            <asp:HiddenField ID="hdd_popup" runat="server" />
+
+            <script type="text/javascript">
+            </script>
+ <uc5:bocadillo ID="bocadillo1" runat="server" />
+        <table border="0" cellpadding="0" cellspacing="0" style="height:100%;width:100%">
+          <tr>
+            <td style="padding-left: 5px; background-image: url(../../images/interfaz/fondo_cabecera.jpg);
+                padding-top: 3px; background-repeat: repeat-x">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr class="trBlanco">
+                        <td class="vacio_cabecera">
+                            <img alt="" src="../../images/interfaz/spacer.gif" />
+                        </td>
+                        <td class="tdsamm">
+                            <%--<uc1:menuFinal ID="Menu1" runat="server" />--%>
+                            <div class="menu_bar">
+                            <img alt="samm3" id="img_menuAnterior" src="~/servicios/img/samm.aspx?k=3" runat="server"/>
+                            </div>
+                         </td>
+                         <td class="tdlogo">
+                            <a >
+                                <img alt="home" src="../../servicios/img/samm.aspx?k=2"/>
+                            </a>
+                         </td>
+                        <td class="tdCabecera">
+                         <uc2:cabecera ID="Cabecera1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr class="trFondo">
+                        <td colspan="4" >
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td id="td_fondoizq" class="reportes" runat="server">
+                                        <img alt="" src="../../images/interfaz/bordeizq.gif" />
+                                    </td>
+                                    <td id="td_fondocen" class="reportes" runat="server">
+                                       <div class="lbl_tittle">
+                                        <asp:ContentPlaceHolder ID="cph_tituloPagina" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                       </div>
+                                    </td>
+                                    <td id="td_fondoder" class="reportes" runat="server" style="width: 10px" valign="top">
+                                        <img src="../../images/interfaz/bordeder.png" />
+                                    </td>
+                                    <td class="tdMenu">
+                                    <%--<uc1:menuFinal ID="menuFinal1" runat="server" />--%>
+                                    </td>
+                              </tr>
+                            </table>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td id="td_franjaancha" runat="server" colspan="4" style="height: 5px">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+            <tr style="height:100%;width:100%">
+                <td style="padding-left: 5px;height:100%;width:100%" valign="top">
+                    <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="1">
+                        <ProgressTemplate>
+                            <uc4:cargando id="Cargando1" runat="server"></uc4:cargando>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                    <table cellpadding="0" cellspacing="0" style="width:100%;height:100%">
+                        <tr>
+                            <%--<td id="td_franjaModulo" runat="server" rowspan="3">
+                                 <img alt="" src="../../images/interfaz/spacer.gif" style="width:10px" />
+                            </td>--%>
+                            <td id="Td1" runat="server" rowspan="3" style="width: 10px" valign="bottom">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" valign="top">
+                                <asp:UpdatePanel ID="UpdatePanel" runat="server">
+                                    <ContentTemplate>
+                                        <table style="width:100%;height:100%">
+                                            <tr>
+                                                <td valign="top" style="width:100%; height:100%;">
+                                                    <asp:ContentPlaceHolder ID="cph_general" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script type="text/javascript" src="../../js/Interfaz/fixff.js"></script>
+<script type="text/javascript" src="../../js/Interfaz/menuF.js"></script>
+<script type="text/javascript">$(document).ready(main());myFunction();</script>
+</html>

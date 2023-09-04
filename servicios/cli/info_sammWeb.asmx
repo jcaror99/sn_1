@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="~/App_Code/interno/info_sammWeb.vb" Class="info_sammWeb" %>

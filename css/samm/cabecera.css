@@ -1,0 +1,181 @@
+﻿@font-face
+ {
+    font-family: 'BunkenTechSansProBook'; 
+    src: url('../../fonts/BunkenTechSansProBook.f8a48a3d.ttf'); 
+ }
+ .tituloPagina {
+	FONT-WEIGHT: bolder; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.title2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #336699; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.bt {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #99ccff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.usuario {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #666666; 
+	font-family: Verdana;
+	
+}
+.agencia {
+	FONT-WEIGHT: bolder; 
+	FONT-SIZE: 10px; 
+	COLOR: #FF2222; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.style2
+{
+    height: 100%;
+    vertical-align: top;
+    width: 5%;
+}
+#img_mostrarInfoGeneralCabecera
+{
+    height: 14px;
+}
+.tdTexto
+{
+    font-weight: bolder;
+    font-size: 10px;
+    color: #666666;
+    padding: 0px 3px 0px 10px;
+}
+.comboBoxEmpresa
+{
+    height: 18px;
+}
+.lnkUsuario
+{
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: normal;
+    color: #003366;
+    cursor: pointer;
+}
+.stiloDivCabecera
+{
+	border-color: #999999;
+	border-width: 2px;
+	z-index: 2;
+	width: 430px;
+	vertical-align: middle;
+	text-align: right;
+}
+.style5
+{
+    height: 90%;
+    vertical-align: top;
+}
+
+.tdsamm
+{
+	padding: 5px 5px 5px 5px;
+	background:white;
+	width:1px;
+	}
+
+
+.trCabecera
+{
+	display :block;
+	width:100%;
+	padding: 5px 0px 5px 0px;
+	display:flex;
+	background:white;
+}
+.vacio_cabecera
+{
+	display:block;
+	width:7px;
+}
+.vacio{display:none;}
+
+.tdlogo
+ {
+	background:white;
+	text-align:left;
+ }
+  .tdlogo .divlogo
+  {
+  	padding:5px 10px;
+    }
+
+.tdCabecera
+{
+	border:0px;
+	background:white;
+	white-space:nowrap;
+	text-align:left;
+}
+.trFondo{ background-color:#d2e3f0;}
+.trBlanco{ background-color:#fff}
+.lblTituloN
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left:3px;
+    margin-right:2px;
+    font-family: BunkenTechSansProBook;
+}
+.descripcion{display:none; }
+.tblMenu
+{
+    border:0;
+    padding:0;
+    margin:0;
+}
+.tdMenuDer
+{
+    display:inline-flex;
+}
+.txt_ayudaCabecera
+{
+    background-color:#f2f2f2;
+	border-color:#a2a2a2;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-top-style:none;
+	border-right-style:none;
+	border-width:1px;
+	font-family:Verdana;
+	font-weight:normal;
+	font-size:10px;
+	padding-left:2px;
+	margin-left:5px;
+    width:125px;
+}
+._TST{display:none;}
+
+@media (max-width: 1020px)
+{
+	.botones {top: 20px;}
+    .imgCliente {display:inherit;}
+    .tdlogo{
+        padding:0px;
+        white-space:nowrap;
+        display:inline-block;
+        width:226px;
+        overflow:hidden;
+    }
+    .divsamm {display:block;}
+}
+
+@media (max-width: 767px){
+    .tdlogo{display:none;} 
+    .tdCabecera .vacio{
+	    display:none;
+	}
+	.stiloDivCabecera {text-align: left;width:auto;}
+}
+
+@media (max-width: 580px){
+    .imgCliente {display:none;}
+    .tdlogo{display:none;} 
+    .tdCabecera .vacio{
+	    display:none;
+	}
+	.stiloDivCabecera {text-align: left;width:auto;}
+}
+   
+    

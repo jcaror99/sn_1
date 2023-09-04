@@ -1,0 +1,9 @@
+﻿--0: fecha desde
+select count(nanum)
+from SROCMA 
+    inner join SRONAM on  SRONAM.NANUM=SROCMA.CMCUNO 
+    left join SRONFP on SRONAM.NANUM=SRONFP.NFNANO
+left join SRONAD on SRONAD.ADNUM=SRONAM.NANUM
+where SRONAM.NATYPP in(1,3) 
+    and SRONAM.NACRDT >= '<$0$>'
+    

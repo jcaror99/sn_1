@@ -1,0 +1,134 @@
+﻿<%@ Master Language="VB" CodeBehind="mas_grillaFormularioVerticalNoAjax.master.vb" Inherits="website.samm_web.master_mas_grillaFormularioVerticalNoAjax" %>
+<%@ Register Src="~/controles/general/menuFinal.ascx" TagName="menuFinal" TagPrefix="uc1" %>
+<%@ Register Src="~/controles/general/cargando.ascx" TagName="cargando" TagPrefix="uc4" %>
+<%@ Register Src="~/controles/general/barraHerramientas.ascx" TagName="barraHerramientas" TagPrefix="uc3" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="~/controles/general/cabecera.ascx" TagName="cabecera" TagPrefix="uc2" %>
+<%@ Register Src="~/controles/general/menuFinal.ascx" TagName="menu" TagPrefix="uc1" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%=MyBase.f_str_titulo()%></title>
+     <script type="text/javascript" src="../../js/Interfaz/Recordatorios.js"></script>
+    <script type="text/javascript" src="../../js/Documento/Documentos.js"></script>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager ID="scm_general" runat="server" EnableScriptGlobalization="True"
+                EnableScriptLocalization="True" EnablePageMethods="True">
+            </asp:ScriptManager>
+            
+            <asp:HiddenField ID="hdd_popup" runat="server" />
+        </div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+            <tr>
+            <td style="padding-left: 5px; background-image: url(../../images/interfaz/fondo_cabecera.jpg);
+                padding-top: 3px; background-repeat: repeat-x">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <img alt="" src="../../images/interfaz/spacer.gif" style="width: 7px; height: 1px;" />
+                        </td>
+                        <td colspan="2" style="padding-left: 5px; padding-bottom: 5px; padding-top: 5px;
+                            white-space: nowrap; background-color: white">
+                            <%--<uc1:menu ID="Menu1" runat="server" />--%>
+                            <img alt="samm7" id="img_menuAnterior" src="~/servicios/img/samm.aspx?k=3"
+                                runat="server" />
+                            <a href="../../">
+                                <img alt="home" src="../../servicios/img/samm.aspx?k=2" style="border: none;" /></a>&nbsp;
+                        </td> 
+                        <td class="tdCabecera">
+                         <uc2:cabecera ID="Cabecera1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" >
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td id="td_fondoizq" runat="server">
+                                        <img src="../../images/interfaz/bordeizq.gif" />
+                                    </td>
+                                    <td id="td_fondocen" class="lbl_tittle6" runat="server" style="white-space:nowrap">
+                                        <asp:ContentPlaceHolder ID="cph_tituloPagina" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                    <td id="td_fondoder" runat="server" style="width: 10px" valign="top">
+                                        <img src="../../images/interfaz/bordeder.png" />
+                                    </td>
+                                    <td class="tdMenu"><uc1:menuFinal ID="menuFinal1" runat="server" /></td>
+                              </tr>
+                            </table>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td id="td_franjaancha" runat="server" colspan="4" style="height: 5px">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+            <tr>
+                <td style="padding-left:15px" valign="top">
+                    <table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td id="td_franjaModulo" runat="server" rowspan="4">
+                                         <img alt="" src="../../images/interfaz/spacer.gif" style="width:10px" />
+                                    </td>
+                                    <td runat="server" rowspan="3" style="width: 10px" valign="bottom">
+                                        &nbsp;
+                                    </td>
+                                    <td colspan="1" rowspan="3" style="background-color: #28679d" valign="top">
+                                        <asp:ContentPlaceHolder ID="cph_botones" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                        <img alt="" src="../../images/interfaz/spacer.gif" style="height:120px;width:1px;" /></td>
+                                    <td valign="top" style="height: 50px; width: 100%;">
+                                        <asp:ContentPlaceHolder ID="cph_grilla" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                    <td rowspan="3" style="width: 10px; background-color: #28679d;white-space:nowrap">&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="background-color: #28679d; height: 20px;">
+                                        <asp:ContentPlaceHolder ID="cph_barraHerramientas" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" valign="top">
+                                        <table>
+                                            <tr>
+                                                <td valign="top">
+                                                    <asp:ContentPlaceHolder ID="cph_informacion" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                                </td>
+                                                <td valign="top">
+                                        <asp:ContentPlaceHolder ID="cph_general" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td runat="server" rowspan="1" style="width: 10px" valign="bottom">
+                                    </td>
+                                    <td colspan="3" rowspan="1" style="background-color: #28679d; height:5px" valign="top">
+                                    </td>
+                                </tr>
+                            </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script type="text/javascript" src="../../js/Interfaz/fixff.js"></script>
+<script type="text/javascript">$(document).ready(main());myFunction();</script>
+</html>

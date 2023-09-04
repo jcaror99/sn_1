@@ -1,0 +1,15 @@
+﻿--0: FECHA DESDE LA CUAL SE QUIEREN TRAER LOS REPUESTOS
+--1: descripción/referencia de repuesto
+SELECT SRBPRG.PGPRDC,
+     SRBPRG.PGDESC,
+     SRBPRG.PGPCA2,
+     SRBPRG.PGPCA3,
+     SRBPRG.PGPCA4,
+     SRBPRG.PGPCA6,
+     SRBPRS.PSASP1,
+     SRBPRG.PGCOUN,
+     SRBPRG.PGFICC 
+FROM SRBPRG , SRBPRS
+where SRBPRG.PGPRDC = SRBPRS.PSPRDC
+    and SRBPRG.PGCDAT >= '<$0$>'
+    and ((SRBPRG.PGPRDC='<$1$>' or '<$1$>'='') or (SRBPRG.PGDESC='<$1$>' or '<$1$>'=''))

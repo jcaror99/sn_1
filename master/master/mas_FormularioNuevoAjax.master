@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" CodeBehind="mas_FormularioNuevoAjax.master.vb" Inherits="website.master_master_mas_FormularioAyuda" %>
+
+<%@ Register Src="~/controles/general/cargando.ascx" TagName="cargando" TagPrefix="uc4" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register src="~/controles/general/error.ascx" tagname="error" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%=MyBase.f_str_titulo()%></title>
+    <link href="../../css/calendario.css" type="text/css" rel="Stylesheet" />
+    <link rel="shortcut icon" href="../../favicon.ico" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        
+            
+            <asp:ScriptManager ID="scm_general" runat="server" EnableScriptGlobalization="True" EnableScriptLocalization="True"  EnablePageMethods="True">
+            </asp:ScriptManager>
+            
+            <uc3:error ID="error1" runat="server" />
+            <asp:HiddenField ID="hdd_popup" runat="server" />
+
+            <script type="text/javascript">
+            </script>
+
+        <table border="0" cellpadding="0" cellspacing="0" style="height:100%;width:100%">
+            
+            <tr style="height:100%;width:100%">
+                <td style="padding-left: 15px;height:100%;width:100%" valign="top">
+                    <table cellpadding="0" cellspacing="0" style="width:100%;height:100%">
+                        <tr>
+                            <td colspan="2" valign="top">
+                                <asp:UpdatePanel ID="UpdatePanel" runat="server">
+                                    <ContentTemplate>
+                                        <table style="width:100%;height:100%">
+                                            <tr>
+                                                <td valign="top" style="width:100%; height:100%;">
+                                                    <asp:ContentPlaceHolder ID="cph_general" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script type="text/javascript" src="../../js/Interfaz/fixff.js"></script>
+<script type="text/javascript">$(document).ready(main());myFunction();</script>
+</html>

@@ -1,0 +1,2 @@
+﻿--0: fecha desde
+select count(SNSENO) from SRBSNT where snddat >= '<$0$>'

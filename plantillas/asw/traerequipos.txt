@@ -1,0 +1,14 @@
+﻿--0: fecha desde
+select SRBSNT.SNSENO, 
+    SRBSNT.SNPRDC,
+    SRBSNT.SNCUNO,
+    SRBSNT.SNDDAT,
+    SRBPRG.PGDESC,
+    SRBPRG.PGPCA5,
+    SRBPRG.PGPCA4
+from SRBSNT, SRBPRG
+where SRBSNT.SNPRDC = SRBPRG.PGPRDC 
+    and SRBSNT.SNDDAT >= '<$0$>'
+    
+    
+    

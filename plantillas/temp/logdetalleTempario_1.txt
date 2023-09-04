@@ -1,0 +1,8 @@
+5 registro(s) insertados
+0 registro(s) actualizados
+
+[1]: 2834codigo detalle kit= KIT COLSE 566164SP
+[2]: 2835codigo detalle kit= KIT COLSE 57VISTA-48D
+[3]: 2836codigo detalle kit= KIT COLSE 576148SP
+[4]: 2837codigo detalle kit= PC-4020MAXSYS -KPC-4020MAXSYS 
+[5]: 2838codigo detalle kit= PC-4020MAXSYS -KMOADICALAM
