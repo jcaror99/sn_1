@@ -146,8 +146,7 @@ TagPrefix="uc3" %>
 </asp:TemplateField>
 <asp:TemplateField HeaderText="res_etiquetas_alq,horometrodevolucion"   >
 <ItemTemplate> 
-   <asp:TextBox ID="txt_horometroDev" runat="server"  CssClass="txt_numero"  Visible='<%# iif( cbool(eval("tienehorometro")),true,false) %>'   Text='<%#  iif(cbool(eval("tienehorometro")),eval("horometroDev"),"0")  %>'  />                  
-</ItemTemplate>
+ <asp:TextBox ID="txt_horometroDev" runat="server"  CssClass="txt_numero"  Visible='<%#IIf(CBool(Eval("tienehorometro")), True, False) %>'   Text='<%#  iif(CBool(Eval("estadoHorometro")), Eval("horometro_salida"), "0")  %>'  /> </ItemTemplate>
 </asp:TemplateField>
 <asp:TemplateField HeaderText="res_etiquetas_alq,danado" Visible ="false">
 <ItemTemplate> 

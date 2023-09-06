@@ -1545,9 +1545,31 @@ TDs
     align-self: auto;
     margin:5px 0px;
 }
+
+.samm-row-hide {
+	display: none;
+}
+
+.samm-column-disabled {
+	pointer-events: none;
+}
+
+.samm-prb-10 {
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.samm-w-25 {
+	width: 25%;
+}
+
+.samm-w-75 {
+	width: 75%;
+}
    
 .repCabecera
 {
+	z-index: 9999;
     width:100%;
     background:#fff;   
     position:fixed;    

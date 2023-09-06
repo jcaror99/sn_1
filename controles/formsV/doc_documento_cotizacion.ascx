@@ -1308,11 +1308,11 @@ a_bln_obligatorio='True' a_str_grupoValidacion='form' />
 <td align='right'>
 </td>
 <td class='td_lblFormulario'>
-<asp:Label ID='lbl_id_estadoTipoDocumento' runat='server' CssClass='lblobligatorio'></asp:Label>
+<asp:Label ID='lbl_id_estadoTipoDocumento' runat='server' CssClass ="lbl" ></asp:Label>
 </td>
 <td class='td_controlesFormulario'>
 <bus:busquedaAvanzada ID='bus_estadoTipoDocumento' runat='server' a_str_tabla='doc_estadoTipoDocumento'
-a_str_grupoValidacion='form' a_bln_obligatorio='True' />
+a_str_grupoValidacion='form'  />
 </td>
 <td>
 </td>

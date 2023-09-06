@@ -744,62 +744,103 @@
                     </div>
                 </div>
             </div>
-       <%--Seccion tarea--%>
-       <div id="div_tarea" runat="server" class="reporteItem" Visible="false" >
-       <div>
+            <%--Seccion tarea--%>
+            <div id="div_tarea" runat="server" class="reporteItem" visible="false">
+                <div>
                     <h4>
-                        <label id="lbl_tareas" runat="server" class="text-primary">
-                        </label>
+                        <label id="lbl_tareas" runat="server" class="text-primary"></label>
                     </h4>
                 </div>
-               <div>
+                <div>
+                    <div>
+                        <div class="row" runat="server" id="crearTarea_div" style="margin-top: 10px;">
+                            <div class="col-sm-12">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label id="lbl_catalogosPlaneados" runat="server" class="control-label text-primary" for="drp_catalogosPlaneados"></label>
+                                        <asp:DropDownList ID="drp_catalogosPlaneados" runat="server" AutoPostBack="false" CssClass="bloque form-control"></asp:DropDownList>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="lbl_tareaNombre" runat="server" class="control-label text-primary" for="txt_tareaNombre"></label>
+                                        <asp:TextBox ID="txt_tareaNombre" runat="server" Text='' CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="lbl_tareaPorcentajeAvance" runat="server" class="control-label text-primary" for="txt_tareaPorcentajeAvance">Avance</label>
+                                        <div class="input-group">
+                                            <asp:TextBox ID="txt_tareaPorcentajeAvance" runat="server" Text='' MaxLength='100' CssClass="validecimal form-control samm-w-25"></asp:TextBox>
+                                            <span class="input-group-addon" id="basic-addon1">%</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" id="btn_agregarTarea" runat="server" class="btn btn-default btn-lg" disabled="disabled">
+                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                        <span id="lbl_agregarTarea" runat="server">Avance</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
                     <h5>
-                        <label id="lbl_porcentajes" runat="server" class="text-primary">
-                        </label>
+                        <label id="lbl_porcentajes" runat="server" class="text-primary"></label>
                     </h5>
                 </div>
-              <div>
-               <asp:GridView ID="grd_tareas" runat="server" AutoGenerateColumns="false" ShowHeader="false"
+                <div>
+                    <asp:GridView ID="grd_tareas" runat="server" AutoGenerateColumns="false" ShowHeader="false"
                         ShowFooter="false" BorderStyle="None" GridLines="None">
                         <Columns>
-                            <asp:TemplateField>
+                            <asp:TemplateField ItemStyle-CssClass="samm-prb-10 samm-w-75">
                                 <ItemTemplate>
-                                
-                                    <label id="lbl_tarea" runat="server" >
-                                        <%# Eval("tarea") %></label>
-                                        
+                                    <asp:TextBox ID="txt_tareaNombre" runat="server" Text='<%#Eval("tarea") %>' CssClass="form-control"></asp:TextBox>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField ItemStyle-CssClass="samm-prb-10 samm-w-25">
+                                <ItemTemplate>
+                                    <div class="input-group">
+                                        <asp:TextBox ID="txt_tareaPorcentajeAvance" runat="server" Text='<%#Eval("porcentajeAvance") %>' MaxLength='100' CssClass="validecimal form-control"></asp:TextBox>
+                                        <span runat="server" class="input-group-addon" >%</span>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField ItemStyle-CssClass="samm-prb-10">
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="imb_eliminarTarea" runat="server" CommandName="eliminar" ImageUrl="~/images/botones/eliminar.gif" CommandArgument='<%# Eval("id") %>' />
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField>
                                 <ItemTemplate>
-                                 
-                               <asp:TextBox ID="txt_tarea" runat="server" Text='<%#Eval("porcentajeAvance") %>' MaxLength='100'
-                                CssClass="validecimal form-control" ></asp:TextBox>
-                              
-
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                            <asp:TemplateField>
-                                <ItemTemplate>
-                                <asp:HiddenField ID="tarea_id" runat="server" Value='<%#Eval("id") %>' />
-                                    <label  runat="server" >
-                                        %</label>
-                                        
+                                    <asp:HiddenField ID="tarea_id" runat="server" Value='<%#Eval("id") %>' />
+                                    <asp:HiddenField ID="id_catalogo" runat="server" Value='<%#Eval("id_catalogo") %>' />
+                                    <asp:HiddenField ID="tarea_active" runat="server" Value='<%#Eval("active") %>' />
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
-              
-              
-              
-              
-              
-              
-              
-                      </div> 
-                      
-
+                </div>
             </div>
+            <script type="text/javascript">
+                let drp = document.getElementById('drp_catalogosPlaneados')
+                let tarea = document.getElementById('txt_tareaNombre');
+                let avance = document.getElementById('txt_tareaPorcentajeAvance');
+                let boton = document.getElementById('btn_agregarTarea');
+
+                function f_activarBtnAgregarTarea() {
+                    if ((drp.value != "" && drp.value > 0) && tarea.value.trim() != "" && avance.value.trim() != "") {
+                        boton.removeAttribute("disabled");
+                    } else {
+                        boton.setAttribute("disabled", "disabled");
+                    }
+                }
+
+                drp.addEventListener("change", (event) => {
+                    f_activarBtnAgregarTarea();
+                });
+
+                tarea.addEventListener("input", f_activarBtnAgregarTarea);
+                avance.addEventListener("input", f_activarBtnAgregarTarea);
+
+            </script>
        
             <%--Seccion evaluacion--%>
             

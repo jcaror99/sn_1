@@ -62,7 +62,7 @@ var nVisitasT = 0;
 var cantVDili = 0;
 
 function crearOT_DV(){
-    document.getElementById("ctl00_cph_general_lbl_mensajeCrearOT").innerHTML = 'Iniciando la creación de OTs...';
+    document.getElementById("cph_general_lbl_mensajeCrearOT").innerHTML = 'Iniciando la creación de OTs...';
     var f = new Date();
     console.log("Starting: " + f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear() + " " + f.getHours() + ":" + f.getMinutes() + ":" + f.getSeconds());
 
@@ -87,15 +87,19 @@ function crearOT_DV(){
 }
 
 function envVisitas(vArr){
-    var e = document.getElementById("ctl00_cph_general_chb_otrosEquipos");
+    var e = document.getElementById("cph_general_grd_visitas_dia_chb_seleccionar");
     var cantXP = 10;
     var i = 0;
     var f = cantXP;
     var cantV = Math.ceil(vArr.length / cantXP);
+   
     for(var pv = 0; pv < cantV; pv++){
         f = getFinal(f, cantV, pv, vArr.length);
 
-        var vst = vArr.slice(i,f);
+        console.log(f)
+        var vst = vArr.slice(i, f);
+        console.log(vst)
+
         var json;
         if (!e.checked){
             json = { "unificar": e.checked, "visitas": vst }
@@ -181,7 +185,7 @@ function getFinal(f, nPackVisitas, p, n_vi){
 var ots = [];
 function crearOT(){
     if (!confirm("¿Esta seguro de los cambios hechos?")){ return; }
-    document.getElementById("ctl00_cph_general_lbl_mensajeCrearOT").innerHTML = '';
+    document.getElementById("cph_general_lbl_mensajeCrearOT").innerHTML = '';
     ots = [];
     visitasOk = [];
     cantVDili = 0;
@@ -193,7 +197,7 @@ function crearOT(){
 }
 
 function setMessageR(text){
-    var m = document.getElementById("ctl00_cph_general_lbl_mensajeCrearOT");
+    var m = document.getElementById("cph_general_lbl_mensajeCrearOT");
     m.innerHTML = m.innerHTML + text + '. ';
 }
 

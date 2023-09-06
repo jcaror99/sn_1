@@ -347,6 +347,16 @@
 </td>
 
 </tr>
+    <tr>
+<td>
+<asp:Label ID="lbl_suguerirHorometro" runat="server" Text="exportarPdf"></asp:Label>
+</td>
+<td>
+<asp:RadioButtonList ID="rbl_suguerirHorometro" runat="server" RepeatDirection="Horizontal">
+</asp:RadioButtonList>
+</td>
+
+</tr>
 
 <tr>
 <td style="height: 26px; text-align: center;vertical-align:top; "  colspan="2">

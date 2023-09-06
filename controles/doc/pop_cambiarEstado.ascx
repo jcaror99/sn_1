@@ -92,7 +92,7 @@
                         <td>
                             <asp:TextBox ID="txt_notas" runat="server" CssClass="txt_multilinea" TextMode="MultiLine"></asp:TextBox>
                         </td>
-                        <td>
+                        <td>    
                             <asp:RequiredFieldValidator ID="rfv_notas" runat="server" CssClass="lbl_mensaje"
                                 ForeColor="" SetFocusOnError="True" ValidationGroup="motivo" ControlToValidate="txt_notas">*</asp:RequiredFieldValidator>
                         </td>
@@ -103,7 +103,7 @@
         <tr>
             <td></td>
             <td>
-                <asp:CheckBox ID="chk_comentario" runat="server" CssClass="lbl" Checked="true" />
+                <asp:CheckBox ID="chk_comentario" runat="server" CssClass="lbl" Checked="true" AutoPostBack="true" />
                 <span id="span_adjuntar" runat="server">
                     <asp:CheckBox ID="chk_adjuntar" runat="server" CssClass="lbl" Checked="false" />
 
@@ -118,6 +118,12 @@
             <td></td>
             <td>
                 <asp:CheckBox ID="chb_cancelaPadre" runat="server" CssClass="lbl" Checked="false" />
+            </td>
+        </tr>
+        <tr >
+            <td></td>
+            <td>
+                <asp:CheckBox ID="chb_recordar" runat="server" CssClass="lbl" Checked="false" Visible="false"/>
             </td>
         </tr>
         <tr id="tr_visita" runat="server">

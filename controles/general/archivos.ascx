@@ -15,6 +15,7 @@
 <tr id="trCargar" runat="server">
 <td>
 <asp:FileUpload ID="fulNuevoArchivo" runat="server" Onchange="f_CarArch(this)" CssClass="ful" Multiple="Multiple" />
+<asp:DropDownList ID="drp_tipoArchivo_nuevo" runat="server" CssClass="drp"></asp:DropDownList>
 </td>
 <td style="padding:2px;">
 <cc1:BotonImagen ID="ibtAceptar" runat="server" ImageUrl="../../images/botones/aceptar.png">
