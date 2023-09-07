@@ -12,7 +12,6 @@
 <%@ Register Src="~/controles/general/bocadillo.ascx" TagName="bocadillo" TagPrefix="boc" %>
 <%@ Register Src="~/controles/general/doc_estados.ascx" TagName="doc_estados" TagPrefix="est" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cph_tituloPagina" runat="Server">
-    <script type="text/javascript" src="../../js/Documento/ItemDocumento.js"></script>
     <asp:Label ID="lbTitulo" runat="server" Text="<%$ Resources:res_titulopagina,forms_doc_itemDocumento %>"
         CssClass="lbl_titulo"></asp:Label>
 </asp:Content>
