@@ -195,7 +195,7 @@ CollapsedImage="../../images/menu/lnk_mas.png" ImageControlID="imb_ext" ExpandDi
                         <bti:BotonImagen ID="bti_archivos" runat="server" CausesValidation="False" ImageUrl="../../images/botones/archivos.gif" />
                         <bti:BotonImagen ID="bti_disponibles" runat="server" CausesValidation="False" ImageUrl="../../images/botones/equ_desmontar.gif" />
                         <bti:BotonImagen ID="bti_calcular" runat="server" CausesValidation="False" ImageUrl="../../images/botones/bontonCalcular.png" />
-                        
+                        <bti:BotonImagen ID="bti_clasificar" runat="server" CausesValidation="False" ImageUrl="../../images/botones/equ_parametros.jpg" />
                         <est:doc_estados ID="doc_estado" runat="server" />
 
                         <asp:CheckBox ID="chb_editarTempario" runat="server" AutoPostBack="true" CssClass="lbl" />
@@ -222,7 +222,7 @@ CollapsedImage="../../images/menu/lnk_mas.png" ImageControlID="imb_ext" ExpandDi
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="<%$ Resources:res_campoGrilla,doc_itemdocumento_esurgente %>">
                         <ItemTemplate>
-                            <asp:CheckBox ID="chb_urgente" runat="server" Checked='<%# eval("urgente") %>' Visible='<%# IIF(eval("id_catalogo")=0,false,true) %>'></asp:CheckBox>
+                            <asp:CheckBox ID="chb_urgente" runat="server" Checked='<%#Eval("urgente") %>' Visible='<%# IIF(eval("id_catalogo")=0,false,true) %>'></asp:CheckBox>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="" HeaderStyle-HorizontalAlign="Left">
@@ -233,6 +233,7 @@ CollapsedImage="../../images/menu/lnk_mas.png" ImageControlID="imb_ext" ExpandDi
                         <ItemTemplate>
                             <asp:CheckBox ID="chb_habilitar" runat="server" />
                             <asp:Label ID="lbl_item" runat="server" Text='<%# eval("item_espacio") %>' CssClass="lbl_grilla"></asp:Label>
+                            <asp:ImageButton ID="bti_agruparItems" OnClientClick='<%# "showHide_itemsDescendientes(this, " & Eval("id") & ")" %>' runat="server" ImageUrl="~/images/iconos/contraer.png"  />
                             <asp:TextBox ID="txt_item" runat="server" Text='<%# eval("item") %>' CssClass="txt_itemGrilla"
                                 ToolTip='<%# eval("catalogo") %>'></asp:TextBox><span style="text-align: right; width: 100%">
                                     <asp:RequiredFieldValidator ID="rfv_item" runat="server" CssClass="lbl_mensaje" ValidationGroup="item"
@@ -245,7 +246,7 @@ CollapsedImage="../../images/menu/lnk_mas.png" ImageControlID="imb_ext" ExpandDi
                         <ItemTemplate>
                             <asp:Label ID="lbl_id" runat="server" Text='<%#Eval("id") %>' CssClass='invisible'></asp:Label>
                             <asp:Label ID="lbl_id_itemDoc" runat="server" Text='<%#Eval("id_itemDoc") %>' Visible="false"></asp:Label>
-                            <asp:Label ID="lbl_id_itemDoc_sup" runat="server" Text='<%#Eval("id_itemDoc_sup") %>'></asp:Label>
+                            <asp:Label ID="lbl_id_itemDoc_sup" CssClass="superior" runat="server" Text='<%#Eval("id_itemDoc_sup") %>'></asp:Label>
                             <asp:Label ID="lbl_itemDoc_padre_cantidad" runat="server" Text='<%#Eval("itemDoc_padre_cantidad") %>'></asp:Label>
                             <asp:Label ID="lbl_costear" runat="server" Text='<%#Eval("costear") %>'></asp:Label>
                             <asp:Label ID="lbl_id_catalogo" runat="server" Text='<%#Eval("id_catalogo") %>'></asp:Label>
@@ -530,5 +531,5 @@ CollapsedImage="../../images/menu/lnk_mas.png" ImageControlID="imb_ext" ExpandDi
     <div class="invisible">
         <uc1:fechaAvanzada ID="FechaAvanzada1" runat="server" Visible="true" />
     </div>
-    <boc:bocadillo ID="Bocadillo" runat="server" />
+    <boc:bocadillo ID="Bocadillo" runat="server" />    
 </asp:Content>
